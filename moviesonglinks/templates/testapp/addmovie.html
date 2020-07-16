@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{%extends "testapp/index.html"%}
+{%block movie_block%}
+    <div class="container" align="center">
+      <div class="jumbotron">
+        <h1>Add Your Favorite Song</h1>
+        <form method="post">
+          {{form.as_p}}
+          {%csrf_token%}
+          <input type="submit" value="Submit" class="btn btn-primary btn-lg" />
+        </form>
+        </div>
+      </div>
+{%endblock%}

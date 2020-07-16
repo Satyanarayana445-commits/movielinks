@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="{%static "css/all.css" %}">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {%block movie_block%}
+    <div class="container" align="center">
+      <div class="jumbotron">
+      <h1>Movie Song Links</h1>
+      <a role="submit" href="/form" class="btn btn-primary btn-lg">Add Song</a>
+      <a role="submit" href="/list" class="btn btn-primary btn-lg">View Song</a>
+    </div>
+    </div>
+    {%endblock%}
+  </body>
+</html>
